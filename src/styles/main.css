@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #1a202c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+.header h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-family: 'Dancing Script', cursive !important;
+}
+
+.listLollies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.listLollies .lollipop {
+    height: 300px;
+}
+
+.input-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.input-wrapper  button {
+    width: 300px;
+    font-size: 14px;
+    border: 1px solid #cbd5e0;
+    text-transform: capitalize;
+    padding: 10px 10px;
+    border-radius: 50px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.input-wrapper  button:hover {
+    background-color: #c912da;
+    color: black;
+}
+
+.lollyFormDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.lollyFlavourDiv {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 75%;
+    margin-top: 1rem;
+    padding: 0 40px;
+}
+
+.lollyFlavourDiv label {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.lollyFlavourDiv input {
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+    margin-left: -10px;
+}  
+
+.lollyFrom {
+    background-color: #2d3748;
+    padding: 30px 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 330px;
+}
+
+.lollyFrom input,
+.lollyFrom textarea {
+    padding: 8px 8px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 2px;
+    border: none;
+}
+
+.lollyFrom label {
+    color: #cbd5e0;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 0px 0 4px 0;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+  
+.form-btn {
+    margin-top: 10px;
+}
+
+.form-btn button{
+    width: 80px;
+    height: 30px;
+    text-transform: capitalize;
+    font-size: 16px;
+    border: none;
+    background-color:#c912da ;
+    color: white;
+    cursor: pointer;
+  }
+
+.newLollyForm1 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.result {
+    color: #fff;
+  }
+  .result > h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-style: italic;
+  }
+
+
+.result  h3 {
+    color: #fa73d9;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    border: 1px solid #000;
+    background-color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    font-size: 15px !important;
+    text-align: center;
+}
+
+.result__details {
+    /* padding: 1em 2em;
+    margin-bottom: 1.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    text-align: left;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #fff; */
+    background-color: #2d3748;
+    color: #f3f3f3;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0px;
+    max-width: 400px;
+}
+
+.details h4 {
+    color: #cbd5e0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.details h3 {
+    color: #4c51bf;
+    text-align: center;
+    padding: 20px 0;
+    margin: 10px 0;
+    background-color:  #1a202c;;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.reciever {
+    font-family: Yellowtail, cursive;
+    font-size: 1.6em;
+    font-style: normal;
+    text-shadow: #000 0 0 10px;
+}
+
+.sender {
+    font-family: Yellowtail, cursive;
+    font-size: 1.6em;
+    font-style: normal;
+    text-shadow: #000 0 0 10px;
+    text-align: right;
+}
+
+.message {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 17px;
+}
+
+
+
+h1 {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/* .reciever {
+    font-family: Yellowtail, cursive;
+    font-size: 1.6em;
+    font-style: normal;
+    text-shadow: #000 0 0 10px;
+}
+
+.sender {
+    font-family: Yellowtail, cursive;
+    font-size: 1.6em;
+    font-style: normal;
+    text-shadow: #000 0 0 10px;
+    text-align: center;
+}
+
+.details {
+    text-align: left; 
+    border: 2px solid #fa73d9 ; 
+    padding: 20px;
+    margin-left: 50px;
+    box-shadow: 0 0 6px #fa73d9;
+    
+} */
+
+/*---------------------------------------------------------------------------------------*/
+/* .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+/* .listLollies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.listLollies .lollipop, .lollyFormDiv .lollipop {
+    height: 300px;
+}
+ 
+.lollyFormDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lollyFlavourDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colorPickerLabel {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    overflow: hidden;
+
+
+}
+.colorPicker {
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.lollyFrom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/*------------------------------showLolly---------------------*/
+
+/* .Lol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result {
+    color: #fff;
+  }
+
+.result > h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.result  h3 {
+    color: #fa73d9;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    border: 1px solid #000;
+    background-color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    font-size: 15px !important;
+    text-align: center;
+}
+
+.result__details {
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    text-align: left;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.reciever {
+    font-family: Yellowtail, cursive;
+    font-size: 1.6em;
+    font-style: normal;
+    text-shadow: #000 0 0 10px;
+}
+
+.sender {
+    font-family: Yellowtail, cursive;
+    font-size: 1.6em;
+    font-style: normal;
+    text-shadow: #000 0 0 10px;
+    text-align: center;
+}
+
+.details{
+    text-align: left; 
+    border: 2px solid #fa73d9 ; 
+    padding: 20px;
+    margin-left: 50px;
+    box-shadow: 0 0 6px #fa73d9;
+
+}
+
+h1{
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+} */
