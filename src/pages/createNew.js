@@ -29,13 +29,6 @@ const initialValues = {
   senderName: "",
 };
 
-const validationSchema = Yup.object({
-  recipientName: Yup.string().required("Recipient name is required"),  
-  message: Yup.string()
-    .required("Message is required")
-    .max(500, "Message should be less than 500 character"),
-  senderName: Yup.string().required("Sender name is Required"),
-});
 
 export default function CreateNew() { 
   const [flavours, setFlavours] = useState({
@@ -151,8 +144,7 @@ export default function CreateNew() {
         <div className="lollyFrom">
          <Formik
           initialValues={initialValues}
-          onSubmit={onSubmit} 
-          validationSchema={validationSchema}         
+          onSubmit={onSubmit}                    
          >
           <Form>
             <p className="textFeildLabel">to:</p>
