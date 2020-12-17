@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import { navigate } from "gatsby";
 import { gql, useMutation, useQuery } from "@apollo/client";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
+import { navigate } from "gatsby";
 import Header from '../components/Header';
 import Lolly from '../components/Lolly';
 
@@ -23,10 +24,18 @@ const createLollyMutation = gql`
   }
 `
 const initialValues = {
-  to: "",
+  recipientName: "",
   message: "",
-  from: "",
+  senderName: "",
 };
+
+const validationSchema = Yup.object({
+  recipientName: Yup.string().required("Recipient name is required"),  
+  message: Yup.string()
+    .required("Message is required")
+    .max(500, "Message should be less than 500 character"),
+  senderName: Yup.string().required("Sender name is Required"),
+});
 
 export default function CreateNew() { 
   const [flavours, setFlavours] = useState({
@@ -73,7 +82,7 @@ export default function CreateNew() {
 
 }, [data])
 
-    
+
 
 
   return (
@@ -142,7 +151,8 @@ export default function CreateNew() {
         <div className="lollyFrom">
          <Formik
           initialValues={initialValues}
-          onSubmit={onSubmit}          
+          onSubmit={onSubmit} 
+          validationSchema={validationSchema}         
          >
           <Form>
             <p className="textFeildLabel">to:</p>
