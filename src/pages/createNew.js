@@ -74,7 +74,7 @@ export default function CreateNew() {
 
   useEffect(() => {
     async function runHook() {
-       const response = await fetch("https://api.netlify.com/build_hooks/5fd80ff44ef9f400bb83ae74", {
+       const response = await fetch("https://api.netlify.com/build_hooks/5fdbbd7331bf660af4af3635", {
             method: "POST",
         });
     }    
