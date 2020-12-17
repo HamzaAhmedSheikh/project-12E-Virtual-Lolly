@@ -49,7 +49,7 @@ const resolvers = {
 
         console.log("args = ",args);
       
-      const client = new faunadb.Client({secret: "fnAD9EWZcrACDYf3XVZTzlFJ2MQirQYxT911Ru5O"});
+      const client = new faunadb.Client({secret: process.env.FAUNADB_ADMIN_SECRET });
       const id = shortid.generate();
       args.lollyPath = id
 

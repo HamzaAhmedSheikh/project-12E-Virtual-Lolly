@@ -243,26 +243,20 @@ body {
     /* color: #5fef0f;  */    
 }
 
-.reciever {
-    /* font-family: Yellowtail, cursive;
-    font-size: 1.6em;
-    font-style: normal;
-    text-shadow: #000 0 0 10px; */
+.reciever {    
     text-transform: capitalize !important;
     padding: 10px 0;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.sender {
-    /* font-family: Yellowtail, cursive;
-    font-size: 1.6em;
-    font-style: normal;
-    text-shadow: #000 0 0 10px;
-    text-align: right; */
+.sender {    
     color: #cbd5e0;
     position: relative;
     right: 0;
     text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 .message {
@@ -271,6 +265,7 @@ body {
     margin-top: 17px; */
     padding: 0 0 20px;
     color: #cbd5e0;
+    font-family: 'Roboto', sans-serif;    
 }
 
 
