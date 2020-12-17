@@ -5,6 +5,15 @@ import { gql, useMutation, useQuery } from "@apollo/client";
 import Header from '../components/Header';
 import Lolly from '../components/Lolly';
 
+const GET_LOLLY = gql`
+{
+    getLolly {
+        message,
+        senderName
+    }
+}
+`
+
 const createLollyMutation = gql`
   mutation createLolly($recipientName: String!, $message: String!, $senderName: String!, $flavourTop: String!, $flavourMiddle: String!,$flavourBottom: String!) {
     createLolly(recipientName: $recipientName, message: $message, senderName: $senderName, flavourTop: $flavourTop, flavourMiddle: $flavourMiddle,flavourBottom: $flavourBottom) {
@@ -43,6 +52,7 @@ export default function CreateNew() {
         }
     })
       console.log("result = ", result);
+      navigate(`/showLolly?id=${result.data.createLolly.lollyPath}`);
 
     await actions.resetForm({
       values: {
@@ -52,6 +62,16 @@ export default function CreateNew() {
       },
     });  
   }
+
+  useEffect(() => {
+    async function runHook() {
+       const response = await fetch("https://api.netlify.com/build_hooks/5fd80ff44ef9f400bb83ae74", {
+            method: "POST",
+        });
+    }    
+    runHook();
+
+}, [data])
 
     
 

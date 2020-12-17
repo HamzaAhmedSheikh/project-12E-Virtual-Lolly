@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body {
   margin: 0;
@@ -201,19 +202,10 @@ body {
 }
 
 .result__details {
-    /* padding: 1em 2em;
-    margin-bottom: 1.5em;
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    text-align: left;
-    font-style: italic;
-    font-size: 1.1em;
-    color: #fff; */
     background-color: #2d3748;
     color: #f3f3f3;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 400px;
+    border-radius: 5px;    
+    padding: 20px;
 }
 
 .details {
@@ -228,6 +220,8 @@ body {
     color: #cbd5e0;
     font-weight: 300;
     text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .details h3 {
@@ -235,187 +229,56 @@ body {
     text-align: center;
     padding: 20px 0;
     margin: 10px 0;
-    background-color:  #1a202c;;
+    background-color: #2d3748;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 15px
+}
+
+.details h3 small {
+    font-size: 14px;
+    font-weight: bold !important;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #48B9EA;
+    /* color: #5fef0f;  */    
 }
 
 .reciever {
-    font-family: Yellowtail, cursive;
+    /* font-family: Yellowtail, cursive;
     font-size: 1.6em;
     font-style: normal;
-    text-shadow: #000 0 0 10px;
+    text-shadow: #000 0 0 10px; */
+    text-transform: capitalize !important;
+    padding: 10px 0;
+    font-size: 20px;
 }
 
 .sender {
-    font-family: Yellowtail, cursive;
+    /* font-family: Yellowtail, cursive;
     font-size: 1.6em;
     font-style: normal;
     text-shadow: #000 0 0 10px;
+    text-align: right; */
+    color: #cbd5e0;
+    position: relative;
+    right: 0;
     text-align: right;
 }
 
 .message {
-    text-align: left;
+    /* text-align: left;
     margin-left: 25px;
-    margin-top: 17px;
+    margin-top: 17px; */
+    padding: 0 0 20px;
+    color: #cbd5e0;
 }
 
 
 
-h1 {
-    font-size: 18px;
-    font-weight: bolder;
-    text-align: center;
-}
-
-
-/*-------------------------------------------------------------------------------------*/
-/* .reciever {
-    font-family: Yellowtail, cursive;
-    font-size: 1.6em;
-    font-style: normal;
-    text-shadow: #000 0 0 10px;
-}
-
-.sender {
-    font-family: Yellowtail, cursive;
-    font-size: 1.6em;
-    font-style: normal;
-    text-shadow: #000 0 0 10px;
-    text-align: center;
-}
-
-.details {
-    text-align: left; 
-    border: 2px solid #fa73d9 ; 
-    padding: 20px;
-    margin-left: 50px;
-    box-shadow: 0 0 6px #fa73d9;
-    
-} */
-
-/*---------------------------------------------------------------------------------------*/
-/* .container {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-} */
-/* .listLollies {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.listLollies .lollipop, .lollyFormDiv .lollipop {
-    height: 300px;
-}
- 
-.lollyFormDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.lollyFlavourDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.colorPickerLabel {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin: 20px;
-    overflow: hidden;
-
-
-}
-.colorPicker {
-    width: 80px;
-    height: 80px;
-    margin-top: -10px;
-    margin-left: -10px;
-}
-
-.lollyFrom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/*------------------------------showLolly---------------------*/
-
-/* .Lol{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.result {
-    color: #fff;
-  }
-
-.result > h4 {
-    text-align: center;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    font-style: italic;
-}
-
-.result  h3 {
-    color: #fa73d9;
-    margin-top: 0.5em;
-    padding: 0.5em 1em;
-    border: 1px solid #000;
-    background-color: #000;
-    text-align: center;
-    letter-spacing: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    font-size: 15px !important;
-    text-align: center;
-}
-
-.result__details {
-    padding: 1em 2em;
-    margin-bottom: 1.5em;
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    text-align: left;
-    font-style: italic;
-    font-size: 1.1em;
-    color: #fff;
-}
-
-.reciever {
-    font-family: Yellowtail, cursive;
-    font-size: 1.6em;
-    font-style: normal;
-    text-shadow: #000 0 0 10px;
-}
-
-.sender {
-    font-family: Yellowtail, cursive;
-    font-size: 1.6em;
-    font-style: normal;
-    text-shadow: #000 0 0 10px;
-    text-align: center;
-}
-
-.details{
-    text-align: left; 
-    border: 2px solid #fa73d9 ; 
-    padding: 20px;
-    margin-left: 50px;
-    box-shadow: 0 0 6px #fa73d9;
-
-}
-
-h1{
+/* h1 {
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
 } */
+
+
