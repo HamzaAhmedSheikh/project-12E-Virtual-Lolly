@@ -37,6 +37,7 @@ export default function CreateNew() {
     flavourBottom: "#deaa43",
   })
   
+  console.log('flavours ', flavours.flavourTop);
 
   const [createLolly, { data }] = useMutation(createLollyMutation);
 
